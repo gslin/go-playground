@@ -1,11 +1,11 @@
-package main
+package https
 
 import (
 	"fmt"
 	"net/http"
 )
 
-func call(url string) {
+func Get(url string) {
 	res, err := http.Get(url)
 	fmt.Printf("url: %s\n", url)
 	fmt.Printf("res: %s\n", res)
