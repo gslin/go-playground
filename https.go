@@ -7,5 +7,7 @@ import (
 
 func call(url string) {
 	res, err := http.Get(url)
-	fmt.Printf("%s: %s\n", res, err)
+	fmt.Printf("url: %s\n", url)
+	fmt.Printf("res: %s\n", res)
+	fmt.Printf("err: %s\n", err)
 }
