@@ -3,11 +3,12 @@
 .PHONY:		all clean
 
 #
+DIST?=	dist/
 GO?=	go
 
 #
 all:
-	${GO} build
+	"${GO}" build -o "${DIST}" ./cmd/https
 
 clean:
-	${GO} clean
+	rm -rf "${DIST}"
